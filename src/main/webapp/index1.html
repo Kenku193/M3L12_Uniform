@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>User Form</title>
+</head>
+<body>
+<h1>JR/CG Mentor Fill Form</h1>
+<form action="formServlet" method="POST">
+  Name: <input name="username" />
+  <br><br>
+  Age: <input name="userage" />
+  <br><br>
+  Gender: <input type="radio" name="gender" value="female" checked />Female
+  <input type="radio" name="gender" value="male" />Male
+  <br><br>
+  Country: <select name="country">
+  <option>Russia</option>
+  <option>China</option>
+  <option>Ukraine</option>
+  <option>Mexico</option>
+</select>
+  <br><br>
+  Courses:
+  <input type="checkbox" name="courses" value="Java" checked />Java
+  <input type="checkbox" name="courses" value="SQL&Hibenate" />SQL&Hibenate
+  <input type="checkbox" name="courses" value="JSP&Servlets" />JSP&Servlets
+  <br><br>
+  <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
